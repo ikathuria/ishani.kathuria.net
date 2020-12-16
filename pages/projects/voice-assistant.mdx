@@ -1,0 +1,19 @@
+import Layout from "../../components/project-layout";
+
+export const meta = {
+  img: "/projects/voice-assistant/cover.gif",
+  title: "voice assistant",
+  date: "October 2020",
+  excerpt: "Voice Assistant made using Python.",
+  tags: ["Programming", "Python", "Voice Assistant"],
+  code: "https://github.com/ikathuria/Riley",
+  view: "",
+  images: [],
+  description: "Voice Assistant made using Python.",
+};
+
+export default ({ children }) => (
+  <Layout meta={meta} project>
+    {children}
+  </Layout>
+);

@@ -1,0 +1,27 @@
+import Layout from "../../components/project-layout";
+
+export const meta = {
+  img: "/projects/python-games/cover.gif",
+  title: "python games",
+  date: "November 2020",
+  excerpt: "Some popular offline games given an online twist with python.",
+  tags: ["Programming", "Python", "Gui"],
+  code: "https://github.com/ikathuria/PythonGames",
+  view: "https://repl.it/@ikathuria/PythonGames",
+  images: [
+    "/projects/python-games/pgCLI.jpg",
+    "/projects/python-games/pgGui1.png",
+    "/projects/python-games/pgGui2.png",
+    "/projects/python-games/pgGui3.png",
+    "/projects/python-games/pgGui4.png",
+    "/projects/python-games/pgGui5.png",
+  ],
+  description:
+    "Some popular offline games given an online twist with python. The games are made in 2 formats, the normal command line text based format and a graphical user interface format made with the help of PyQt5.",
+};
+
+export default ({ children }) => (
+  <Layout meta={meta} project>
+    {children}
+  </Layout>
+);

@@ -1,0 +1,28 @@
+import Layout from "../../components/project-layout";
+
+export const meta = {
+  img: "/projects/django-portfolio/cover.gif",
+  title: "django portfolio",
+  date: "November 2020",
+  excerpt:
+    "A portfolio web application made with django and deployed on heroku.",
+  tags: ["Programming", "Python", "django", "portfolio"],
+  code: "https://github.com/ikathuria/DjangoPortfolio",
+  view: "https://fierce-thicket-91337.herokuapp.com/",
+  images: [
+    "/projects/pg/pgCLI.jpg",
+    "/projects/pg/pgGui1.png",
+    "/projects/pg/pgGui2.png",
+    "/projects/pg/pgGui3.png",
+    "/projects/pg/pgGui4.png",
+    "/projects/pg/pgGui5.png",
+  ],
+  description:
+    "A portfolio web application made with django and deployed on heroku.",
+};
+
+export default ({ children }) => (
+  <Layout meta={meta} project>
+    {children}
+  </Layout>
+);

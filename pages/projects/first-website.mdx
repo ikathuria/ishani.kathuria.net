@@ -1,0 +1,27 @@
+import Layout from "../../components/project-layout";
+
+export const meta = {
+  img: "/projects/first-website/cover.gif",
+  title: "first website",
+  date: "July 2020",
+  excerpt:
+    "A project made while learning CSS with the help of the CSS Essential Training course on LinkedIn.",
+  tags: ["HTML", "CSS", "portfolio"],
+  code: "https://github.com/ikathuria/FirstWebsite",
+  view: "https://ikathuria.github.io/FirstWebsite/",
+  images: [
+    "/projects/first-website/1.png",
+    "/projects/first-website/2.png",
+    "/projects/first-website/3.png",
+    "/projects/first-website/4.png",
+    "/projects/first-website/5.png",
+  ],
+  description:
+    "A project made while learning CSS with the help of the CSS Essential Training course on LinkedIn.",
+};
+
+export default ({ children }) => (
+  <Layout meta={meta} project>
+    {children}
+  </Layout>
+);

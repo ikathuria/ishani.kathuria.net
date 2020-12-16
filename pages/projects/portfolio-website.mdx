@@ -1,0 +1,27 @@
+import Layout from "../../components/project-layout";
+
+export const meta = {
+  img: "/projects/portfolio-website/cover.gif",
+  title: "portfolio website",
+  date: "August 2020",
+  excerpt:
+    "A simple portfolio website made with HTML, CSS, Bootstrap and Javascript. Deployed using Github Pages.",
+  tags: ["HTML", "CSS", "Bootstrap", "JavaScript", "portfolio"],
+  code: "https://github.com/ikathuria/PortfolioWebsite",
+  view: "https://ikathuria.github.io/PortfolioWebsite/",
+  images: [
+    "/projects/portfolio-website/1.png",
+    "/projects/portfolio-website/2.png",
+    "/projects/portfolio-website/3.png",
+    "/projects/portfolio-website/4.png",
+    "/projects/portfolio-website/5.png",
+  ],
+  description:
+    "A simple portfolio website made with HTML, CSS, Bootstrap and Javascript. Deployed using Github Pages.",
+};
+
+export default ({ children }) => (
+  <Layout meta={meta} project>
+    {children}
+  </Layout>
+);

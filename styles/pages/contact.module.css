@@ -1,0 +1,130 @@
+/* ----------------------- main ----------------------- */
+
+.main {
+    padding-top: 5%;
+    min-height: 100vh;
+}
+
+/* ----------------------- background ----------------------- */
+
+.imgContact {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-image: url("../../public/pages/contact.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+}
+
+.colorContact {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(121, 173, 220);
+}
+
+/* ----------------------- heading ----------------------- */
+
+.header h1 {
+    font-weight: bold;
+    font-size: 5rem;
+    font-family: 'Baloo 2', cursive;
+    z-index: 1;
+}
+
+/* ----------------------- form ----------------------- */
+
+.cardContact {
+    border: 0;
+    border: 2px solid black;
+    box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.formField {
+    margin: 2px;
+    border: 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* ----------------------- social ----------------------- */
+
+.social {
+    background: #262626;
+}
+
+.socialList ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.socialList li {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    line-height: 50px;
+    font-size: 30px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.socialList .iconSocial {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+.socialList li:hover .iconSocial {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.socialList li:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: 2;
+}
+
+.socialList li:hover:before {
+    top: 0;
+}
+
+.socialList li:nth-child(1):before {
+    background: rgb(51, 51, 51);
+}
+
+.socialList li:nth-child(2):before {
+    background: rgb(0, 116, 179);
+}
+
+.socialList li:nth-child(3):before {
+    background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+}
+
+.socialList li:nth-child(4):before {
+    background: rgb(255, 109, 109);
+}
+
+.socialList li:nth-child(5):before {
+    background: linear-gradient(rgba(0, 0, 0, 1) 45%, rgba(255, 255, 255, 1) 100%);
+}

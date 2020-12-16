@@ -1,0 +1,780 @@
+/* ---------------------------------------------- Jumbotron ---------------------------------------------- */
+
+.jumbotron {
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  padding: 0;
+
+  text-align: center;
+
+  background-color: transparent;
+}
+
+.header {
+  position: relative;
+  top: 50%;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+
+  height: 55vh;
+  width: 100%;
+
+  font-family: "Comfortaa", cursive;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.header h1 {
+  display: flex;
+  font-size: 7rem;
+  letter-spacing: 1rem;
+  word-wrap: break-word;
+}
+
+/* waves */
+
+.waves {
+  position: relative;
+  margin-bottom: -7px;
+
+  width: 100%;
+  height: 15vh;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: wave-motion 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+.bottomContent {
+  height: 40vh;
+  margin-bottom: 5%;
+
+  background-color: rgb(255, 192, 159);
+}
+
+.icon {
+  position: relative;
+  top: 40%;
+
+  color: rgb(104, 57, 57);
+
+  animation: swipe 2s linear infinite both;
+}
+
+@keyframes swipe {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -70%);
+  }
+}
+
+@keyframes wave-motion {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/* ---------------------------------------------- Main ---------------------------------------------- */
+
+.mainRow {
+  min-height: 100vh;
+  margin-top: 3%;
+  padding-top: 3%;
+
+  width: 100%;
+  height: 50%;
+
+  overflow: hidden;
+}
+
+.mainRow h2 {
+  font: bold 5rem "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* ---------------------------------------------- About Me ---------------------------------------------- */
+
+.me {
+  background-image: url("/pages/ishani-kathuria.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+}
+
+.description p {
+  text-align: justify;
+}
+
+/* ---------------------------------------------- Projects ---------------------------------------------- */
+
+.projectsRow {
+  justify-content: center;
+}
+
+.cardContainer {
+  flex: 1;
+  margin: 30px;
+}
+
+.cardContainer .card {
+  position: relative;
+
+  width: 100%;
+
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.cardContainer .card a {
+  position: relative;
+
+  display: block;
+  padding: 30px;
+  width: 100%;
+  height: 300px;
+
+  text-decoration: none;
+  color: black;
+
+  border: 2px solid black;
+  background: white;
+
+  transition: 0.25s ease;
+
+  z-index: 1;
+}
+
+.cardContainer .card a:hover {
+  color: #fff;
+
+  border-color: #5bc0eb;
+  background-image: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)),
+    repeating-linear-gradient(
+      0,
+      transparent,
+      transparent 2px,
+      black 3px,
+      black 3px
+    ),
+    var(--image);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transform: translate(-30px, -30px);
+}
+
+.cardContainer .card a:hover .cardDisplay {
+  display: none;
+}
+
+.cardContainer .card a:hover .cardHover {
+  display: block;
+}
+
+.cardContainer .card a .cardDisplay h3 {
+  margin: 20px 0 0;
+
+  font-family: "Roboto Slab", serif;
+}
+
+.cardContainer .card a .cardHover {
+  display: none;
+}
+
+.cardContainer .card a .cardHover h3 {
+  margin: 20px 0;
+
+  font-family: "Roboto Slab", serif;
+}
+
+.cardContainer .card a .cardHover p {
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.cardContainer .card .cardBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border: 2px dashed black;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more svg {
+  width: 80vw;
+  max-width: 430px;
+}
+
+.more svg path {
+  animation: blob 2s infinite forwards;
+  transform-origin: 50% 50%;
+}
+
+.more svg path:hover {
+  fill: #525252;
+}
+
+.more svg text {
+  font-size: 2rem;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
+}
+
+@keyframes blob {
+  25% {
+    d: path(
+      "M 90 210 C 90 180 110 160 130 160 C 160 160 180 140 200 130 C 230 120 270 100 290 140 C 310 170 340 100 360 140 C 370 160 390 180 390 210 C 390 240 380 290 350 280 C 330 270 300 280 280 290 C 260 300 230 300 220 290 C 200 270 160 310 140 280 C 130 260 90 240 90 210 "
+    );
+    transform: rotate(-5deg);
+  }
+  50% {
+    d: path(
+      "M 90 210 C 90 180 100 150 120 130 C 150 100 180 140 200 130 C 230 120 270 100 290 140 C 300 160 330 130 360 140 C 390 150 390 180 390 210 C 390 240 380 300 350 280 C 330 270 320 230 280 260 C 260 280 220 310 200 290 C 180 270 160 280 140 280 C 110 280 90 240 90 210"
+    );
+  }
+  75% {
+    d: path(
+      "M 90 210 C 90 180 110 180 130 170 C 150 160 170 130 200 130 C 240 130 260 150 290 140 C 310 130 340 120 360 140 C 380 160 390 180 390 210 C 390 240 380 260 350 270 C 320 280 290 270 270 260 C 240 250 230 280 210 290 C 180 310 130 300 110 280 C 90 260 90 240 90 210"
+    );
+    transform: rotate(5deg);
+  }
+}
+
+/* ---------------------------------------------- skills ---------------------------------------------- */
+
+.skillCol h3 {
+  font-family: "Roboto Slab", serif;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.skillCol h4 {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2.5rem;
+}
+
+.skillIcon {
+  font-size: 4rem;
+}
+
+.btn {
+  margin: 3%;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: inherit;
+
+  background: inherit;
+  border: 3px solid black;
+  border-radius: 50px;
+
+  cursor: default;
+}
+
+/* FRONT END -------------------------- */
+/* html */
+.skillIcon.html {
+  color: #e44d26;
+  background: radial-gradient(#ffffff 58%, transparent 58%);
+}
+.btn.html {
+  color: #ffffff;
+  border-color: #000000;
+  background: #e44d26;
+}
+.btn.html:hover,
+.btn.html:focus {
+  color: #f16529;
+  border-color: #e44d26;
+  background: #000000;
+}
+
+/* css */
+.skillIcon.css {
+  color: #2565ae;
+  background: radial-gradient(#ffffff 58%, transparent 58%);
+}
+.btn.css {
+  color: #2565ae;
+  border-color: #66d3fa;
+  background: #ffffff;
+}
+.btn.css:hover,
+.btn.css:focus {
+  color: #66d3fa;
+  border-color: #3c99dc;
+  background: #0f5298;
+}
+
+/* bootstrap */
+.skillIcon.bootstrap {
+  color: #553c7b;
+  background: linear-gradient(
+    to bottom,
+    transparent 10% 20%,
+    #ffffff 20% 80%,
+    transparent 80%
+  );
+}
+.btn.bootstrap {
+  color: #ffffff;
+  background: #553c7b;
+}
+.btn.bootstrap:hover,
+.btn.bootstrap:focus {
+  color: #553c7b;
+  border-color: #000000;
+  background: #080135;
+}
+
+/* javascript */
+.skillIcon.javascript {
+  color: #f0db4f;
+  background: linear-gradient(
+    to bottom,
+    transparent 0 10%,
+    #323330 10% 90%,
+    transparent 90%
+  );
+}
+.btn.javascript {
+  color: #323330;
+  border-color: #323330;
+  background: #f0db4f;
+}
+.btn.javascript:hover,
+.btn.javascript:focus {
+  color: #f0db4f;
+  border-color: #323330;
+  background: #323330;
+}
+
+/* npm */
+.skillIcon.npm {
+  color: #cc3534;
+  background: linear-gradient(
+    to bottom,
+    transparent 0 30%,
+    #ffffff 30% 70%,
+    transparent 70%
+  );
+}
+.btn.npm {
+  color: #cc3534;
+  border-color: #000000;
+  background: #ffffff;
+}
+.btn.npm:hover,
+.btn.npm:focus {
+  color: #ffffff;
+  border-color: #000000;
+  background: #cc3534;
+}
+
+/* BACK END --------------------------------- */
+/* python */
+.skillIcon.python {
+  color: #ffd43b;
+  background: #306998;
+}
+.btn.python {
+  color: #ffd43b;
+  border-color: #ffd43b;
+  background: #306998;
+}
+.btn.python:hover,
+.btn.python:focus {
+  color: #306998;
+  border-color: #646464;
+  background: #ffd43b;
+}
+
+/* django */
+.django {
+  color: #ffffff;
+  border-color: #000000;
+  background: #092e20;
+}
+.btn.django:hover,
+.btn.django:focus {
+  color: #092e20;
+  border-color: #000000;
+  background: #ffffff;
+}
+
+/* react */
+.react {
+  color: #61dbfb;
+  border-color: #61dbfb;
+  background: #000000;
+}
+.btn.react:hover,
+.btn.react:focus {
+  color: #000000;
+  border-color: #000000;
+  background: #61dbfb;
+}
+
+/* next */
+.next {
+  color: #ffffff;
+  border-color: #000000;
+  background: #000000;
+}
+.btn.next:hover,
+.btn.next:focus {
+  color: #000000;
+  border-color: #000000;
+  background: #ffffff;
+}
+
+/* postreSQL */
+.sql {
+  color: #ffffff;
+  border-color: #000000;
+  background: #336791;
+}
+.btn.sql:hover,
+.btn.sql:focus {
+  color: #336791;
+  border-color: #000000;
+  background: #ffffff;
+}
+
+/* TOOLS ---------------------------------- */
+/* git */
+.skillIcon.git {
+  color: #f1502f;
+  background: linear-gradient(135deg, inherit 25%, transparent 25%),
+    linear-gradient(225deg, inherit 25%, transparent 25%),
+    linear-gradient(315deg, inherit 25%, transparent 25%),
+    linear-gradient(45deg, inherit 25%, transparent 25%);
+
+  background-color: #ffffff;
+}
+.btn.git {
+  color: #f1502f;
+  border-color: #000000;
+  background: #000000;
+}
+.btn.git:hover,
+.btn.git:focus {
+  color: #ffffff;
+  border-color: #3e2c00;
+  background: #f1502f;
+}
+
+/* github */
+.github {
+  color: #ffffff;
+  border-color: #000000;
+  background: #333333;
+}
+.btn.github:hover,
+.btn.github:focus {
+  color: #000000;
+  border-color: #999999;
+  background: #ffffff;
+}
+/* vs */
+.vs {
+  color: #ffffff;
+  border-color: #1f9cf0;
+  background: #0065a9;
+}
+.btn.vs:hover,
+.btn.vs:focus {
+  color: #0065a9;
+  border-color: #000000;
+  background: #1f9cf0;
+}
+
+/* ---------------------------------------------- art ---------------------------------------------- */
+
+.art {
+  margin-top: 3%;
+}
+
+.artRow {
+  display: flex;
+  height: 60vh;
+}
+
+.inner h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Roboto Slab", serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.inner {
+  position: relative;
+  flex: 1;
+
+  height: 100%;
+  width: 50%;
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+
+  background: var(--color);
+}
+
+.inner h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  color: black;
+}
+
+.inner:hover {
+  flex: 1.5;
+
+  background: var(--image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner:hover h3 {
+  color: black;
+  background-color: white;
+}
+
+/* ---------------------------------------------- contact ---------------------------------------------- */
+
+.contact {
+  position: relative;
+}
+
+.imgContact {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background-image: url("../../public/pages/contact.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.colorContact {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(121, 220, 162);
+  z-index: -1;
+}
+
+/* form */
+
+.cardContact {
+  border: 0;
+  border: 2px solid black;
+  box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.formField {
+  margin: 2px;
+  border: 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* social */
+
+.social {
+  background: #262626;
+}
+
+.socialList ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.socialList li {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  line-height: 50px;
+  font-size: 30px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.socialList .iconSocial {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.socialList li:hover .iconSocial {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.socialList li:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.socialList li:hover:before {
+  top: 0;
+}
+
+.socialList li:nth-child(1):before {
+  background: rgb(51, 51, 51);
+}
+
+.socialList li:nth-child(2):before {
+  background: rgb(0, 116, 179);
+}
+
+.socialList li:nth-child(3):before {
+  background: -webkit-radial-gradient(
+    33% 100% circle,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
+}
+
+.socialList li:nth-child(4):before {
+  background: rgb(255, 109, 109);
+}
+
+.socialList li:nth-child(5):before {
+  background: linear-gradient(
+    rgba(0, 0, 0, 1) 45%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+/* ----------------------- SIZING ----------------------- */
+
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 6rem;
+  }
+  .main h2 {
+    font-size: 5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 4rem;
+  }
+  .main h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 2.75rem;
+  }
+  .main h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .header h1 {
+    display: block;
+    font-size: 3rem;
+    letter-spacing: 0;
+  }
+  .main h2 {
+    font-size: 3rem;
+  }
+  .artRow {
+    display: block;
+    height: 200vh;
+  }
+  .inner {
+    width: 100%;
+    height: 50%;
+  }
+}

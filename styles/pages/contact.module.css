@@ -13,7 +13,7 @@
   z-index: -1;
   width: 50%;
   height: 100%;
-  background-image: url("../../public/pages/contact.jpg");
+  background-image: url("/pages/contact.webp");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;

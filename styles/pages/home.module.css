@@ -287,14 +287,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("/pages/photo.jpg");
+  background: url("/pages/photo.webp");
   background-size: cover;
   background-position: center center;
   transition: all 0.5s ease;
 }
 
 .artImg:hover {
-  background: url("/pages/blog.jpg");
+  background: url("/pages/blog.webp");
   background-size: cover;
   background-position: center center;
 }

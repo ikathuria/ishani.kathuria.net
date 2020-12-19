@@ -1,9 +1,11 @@
 /* ----------------------- main ----------------------- */
 
 .main {
-  padding-top: 5%;
-  padding-bottom: 5%;
   min-height: 100vh;
+}
+
+.row {
+  padding-top: 2%;
 }
 
 .header {

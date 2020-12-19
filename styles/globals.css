@@ -20,14 +20,32 @@ body {
 }
 
 body {
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-left: 20%;
 }
 
 a {
   text-decoration: none;
 }
 
-.active {
-  text-decoration: line-through;
+/* ----------------------- SIZING ----------------------- */
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 767px) {
+  body {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 280px) {
+  body {
+    margin-left: 0;
+  }
 }

@@ -10,7 +10,6 @@ import {
   Button,
 } from "react-bootstrap";
 import styles from "../styles/pages/projects.module.css";
-import React, { useEffect, useState, useRef } from "react";
 import { Animated } from "react-animated-css";
 
 export default function Projects() {
@@ -21,7 +20,7 @@ export default function Projects() {
       </Head>
 
       <Container fluid className={styles.main}>
-        <Row>
+        <Row className={styles.row}>
           <Col lg={2}>
             <h1 className={styles.header}>Projects.</h1>
           </Col>
@@ -34,23 +33,23 @@ export default function Projects() {
                 animationInDuration={3000}
                 isVisible={true}
               >
-                <CardColumns className={styles.row} id="projects">
-                  {theProjects.map(({ slug, title, date, excerpt, tags }) => (
+                <CardColumns className={styles.cardCol} id="projects">
+                  {theProjects.map((projects) => (
                     <Card className={styles.card}>
                       <Card.Body>
                         <Card.Title className={styles.cardTitle}>
-                          {title}
+                          {projects.title}
                         </Card.Title>
 
                         <Card.Subtitle className={styles.cardDate}>
-                          {date}
+                          {projects.date}
                         </Card.Subtitle>
 
                         <Card.Text className={styles.cardExcerpt}>
-                          {excerpt}
+                          {projects.excerpt}
                         </Card.Text>
 
-                        <Link href={`/projects/${slug}`}>
+                        <Link href={`/projects/${projects.slug}`} passhref>
                           <a className={styles.cardLink}>
                             Click to see project
                           </a>
@@ -58,7 +57,7 @@ export default function Projects() {
                       </Card.Body>
 
                       <Card.Footer className={styles.cardTags}>
-                        {tags.map((item) => (
+                        {projects.tags.map((item) => (
                           <div>{item}</div>
                         ))}
                       </Card.Footer>

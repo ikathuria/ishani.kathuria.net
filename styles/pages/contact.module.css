@@ -1,45 +1,35 @@
 /* ----------------------- main ----------------------- */
 
 .main {
-    padding-top: 5%;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 /* ----------------------- background ----------------------- */
 
-.imgContact {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    background-image: url("../../public/pages/contact.jpg");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: cover;
-}
-
-.colorContact {
-    position: absolute;
-    top: 0;
-    right: 50%;
-    width: 50%;
-    height: 100%;
-    background-color: rgb(121, 173, 220);
+.img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  width: 50%;
+  height: 100%;
+  background-image: url("../../public/pages/contact.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
 }
 
 /* ----------------------- heading ----------------------- */
 
 .header h1 {
-    font-weight: bold;
-    font-size: 5rem;
-    font-family: 'Baloo 2', cursive;
     z-index: 1;
+    margin-top: 2%;
+    font: bold 5rem "Poppins", sans-serif;
 }
 
 /* ----------------------- form ----------------------- */
 
-.cardContact {
+.card {
     border: 0;
     border: 2px solid black;
     box-shadow: -10px 10px rgba(0, 0, 0, 0.5);

@@ -6,10 +6,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-import Header from "../components/header";
-import ProjectHeader from "../components/project-header";
-import SocialHeader from "../components/social-header";
-import Footer from "../components/footer";
+import Nav from "../components/nav";
 
 library.add(fab, fas);
 
@@ -42,13 +39,10 @@ export default function MyApp({ Component, pageProps }) {
         ></link>
       </Head>
 
-      <SocialHeader />
-
-      {router.pathname != "/" ? <ProjectHeader /> : <Header />}
+      <Nav />
 
       <Component {...pageProps} />
-
-      <Footer />
+      
     </>
   );
 }

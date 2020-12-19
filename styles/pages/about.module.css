@@ -1,0 +1,317 @@
+.main section {
+  min-height: 100vh;
+}
+
+/* ---------------------------------------------- About Me ---------------------------------------------- */
+
+.aboutRow {
+  min-height: 100vh;
+}
+
+.image {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.description {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+.description h1 {
+  font: bold 5rem "Poppins", sans-serif;
+}
+
+.description h1 span {
+  text-shadow: 5px 5px #59c3c3;
+}
+
+/* ---------------------------------------------- skills ---------------------------------------------- */
+
+.skills h2 {
+  margin-top: 5%;
+  font: bold 5rem "Poppins", sans-serif;
+}
+
+.skillCol h3 {
+  font-family: "Roboto Slab", serif;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.skillCol h4 {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2.5rem;
+}
+
+.skillIcon {
+  font-size: 4rem;
+}
+
+.btn {
+  margin: 3%;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: inherit;
+
+  background: inherit;
+  border: 3px solid black;
+  border-radius: 50px;
+
+  cursor: default;
+}
+
+/* FRONT END -------------------------- */
+/* html */
+.skillIcon.html {
+  color: #e44d26;
+  background: radial-gradient(#ffffff 58%, transparent 58%);
+}
+.btn.html {
+  color: #ffffff;
+  border-color: #000000;
+  background: #e44d26;
+}
+.btn.html:hover,
+.btn.html:focus {
+  color: #f16529;
+  border-color: #e44d26;
+  background: #000000;
+}
+
+/* css */
+.skillIcon.css {
+  color: #2565ae;
+  background: radial-gradient(#ffffff 58%, transparent 58%);
+}
+.btn.css {
+  color: #2565ae;
+  border-color: #66d3fa;
+  background: #ffffff;
+}
+.btn.css:hover,
+.btn.css:focus {
+  color: #66d3fa;
+  border-color: #3c99dc;
+  background: #0f5298;
+}
+
+/* bootstrap */
+.skillIcon.bootstrap {
+  color: #553c7b;
+  background: linear-gradient(
+    to bottom,
+    transparent 10% 20%,
+    #ffffff 20% 80%,
+    transparent 80%
+  );
+}
+.btn.bootstrap {
+  color: #ffffff;
+  background: #553c7b;
+}
+.btn.bootstrap:hover,
+.btn.bootstrap:focus {
+  color: #553c7b;
+  border-color: #000000;
+  background: #080135;
+}
+
+/* javascript */
+.skillIcon.javascript {
+  color: #f0db4f;
+  background: linear-gradient(
+    to bottom,
+    transparent 0 10%,
+    #323330 10% 90%,
+    transparent 90%
+  );
+}
+.btn.javascript {
+  color: #323330;
+  border-color: #323330;
+  background: #f0db4f;
+}
+.btn.javascript:hover,
+.btn.javascript:focus {
+  color: #f0db4f;
+  border-color: #323330;
+  background: #323330;
+}
+
+/* npm */
+.skillIcon.npm {
+  color: #cc3534;
+  background: linear-gradient(
+    to bottom,
+    transparent 0 30%,
+    #ffffff 30% 70%,
+    transparent 70%
+  );
+}
+.btn.npm {
+  color: #cc3534;
+  border-color: #000000;
+  background: #ffffff;
+}
+.btn.npm:hover,
+.btn.npm:focus {
+  color: #ffffff;
+  border-color: #000000;
+  background: #cc3534;
+}
+
+/* BACK END --------------------------------- */
+/* python */
+.skillIcon.python {
+  color: #ffd43b;
+  background: #306998;
+}
+.btn.python {
+  color: #ffd43b;
+  border-color: #ffd43b;
+  background: #306998;
+}
+.btn.python:hover,
+.btn.python:focus {
+  color: #306998;
+  border-color: #646464;
+  background: #ffd43b;
+}
+
+/* django */
+.django {
+  color: #ffffff;
+  border-color: #000000;
+  background: #092e20;
+}
+.btn.django:hover,
+.btn.django:focus {
+  color: #092e20;
+  border-color: #000000;
+  background: #ffffff;
+}
+
+/* react */
+.react {
+  color: #61dbfb;
+  border-color: #61dbfb;
+  background: #000000;
+}
+.btn.react:hover,
+.btn.react:focus {
+  color: #000000;
+  border-color: #000000;
+  background: #61dbfb;
+}
+
+/* next */
+.next {
+  color: #ffffff;
+  border-color: #000000;
+  background: #000000;
+}
+.btn.next:hover,
+.btn.next:focus {
+  color: #000000;
+  border-color: #000000;
+  background: #ffffff;
+}
+
+/* postreSQL */
+.sql {
+  color: #ffffff;
+  border-color: #000000;
+  background: #336791;
+}
+.btn.sql:hover,
+.btn.sql:focus {
+  color: #336791;
+  border-color: #000000;
+  background: #ffffff;
+}
+
+/* TOOLS ---------------------------------- */
+/* git */
+.skillIcon.git {
+  color: #f1502f;
+  background: linear-gradient(135deg, inherit 25%, transparent 25%),
+    linear-gradient(225deg, inherit 25%, transparent 25%),
+    linear-gradient(315deg, inherit 25%, transparent 25%),
+    linear-gradient(45deg, inherit 25%, transparent 25%);
+
+  background-color: #ffffff;
+}
+.btn.git {
+  color: #f1502f;
+  border-color: #000000;
+  background: #000000;
+}
+.btn.git:hover,
+.btn.git:focus {
+  color: #ffffff;
+  border-color: #3e2c00;
+  background: #f1502f;
+}
+
+/* github */
+.github {
+  color: #ffffff;
+  border-color: #000000;
+  background: #333333;
+}
+.btn.github:hover,
+.btn.github:focus {
+  color: #000000;
+  border-color: #999999;
+  background: #ffffff;
+}
+/* vs */
+.vs {
+  color: #ffffff;
+  border-color: #1f9cf0;
+  background: #0065a9;
+}
+.btn.vs:hover,
+.btn.vs:focus {
+  color: #0065a9;
+  border-color: #000000;
+  background: #1f9cf0;
+}
+
+/* ----------------------- SIZING ----------------------- */
+
+@media (max-width: 1024px) {
+  .me {
+    background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .me {
+    background-position: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .me {
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 280px) {
+  .me {
+    background-position: center;
+  }
+}

@@ -76,17 +76,26 @@
   animation-duration: 20s;
 }
 
+@keyframes wave-motion {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
 .bottomContent {
   height: 35vh;
 
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
 }
 
 .icon {
   position: relative;
   top: 40%;
 
-  color: rgb(104, 57, 57);
+  color: rgb(0, 0, 0);
 
   animation: swipe 2s linear infinite both;
 }
@@ -97,15 +106,6 @@
   }
   to {
     transform: translate(0, -70%);
-  }
-}
-
-@keyframes wave-motion {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-  100% {
-    transform: translate3d(85px, 0, 0);
   }
 }
 

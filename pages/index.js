@@ -50,25 +50,25 @@ export default function Home() {
                   xlinkHref="#gentle-wave"
                   x={48}
                   y={0}
-                  fill="rgba(235, 235, 235, 0.7)"
+                  fill="rgba(255, 255, 255, 0.7)"
                 />
                 <use
                   xlinkHref="#gentle-wave"
                   x={48}
                   y={3}
-                  fill="rgba(235, 235, 235, 0.5)"
+                  fill="rgba(255, 255, 255, 0.5)"
                 />
                 <use
                   xlinkHref="#gentle-wave"
                   x={48}
                   y={5}
-                  fill="rgba(235, 235, 235, 0.3)"
+                  fill="rgba(255, 255, 255, 0.3)"
                 />
                 <use
                   xlinkHref="#gentle-wave"
                   x={48}
                   y={7}
-                  fill="rgb(235, 235, 235)"
+                  fill="rgb(255, 255, 255)"
                 />
               </g>
             </svg>

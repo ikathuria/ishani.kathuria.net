@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Typewriter from "typewriter-effect";
-import { Navbar, Nav, Row } from "react-bootstrap";
+import { Navbar, Nav, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/components/nav.module.css";
 
@@ -13,8 +13,8 @@ export default function NavBar() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mx-auto">
-          <div>
+        <Nav className="flex-column">
+          <Row className={styles.row + " " + styles.header}>
             <Nav.Link
               className={
                 router.pathname === "/"
@@ -91,18 +91,20 @@ export default function NavBar() {
               <span>m</span>
               <span>e</span>
             </Nav.Link>
-          </div>
-            <div className={styles.social}>
-              <Nav.Item>
+          </Row>
+
+          <Row className={styles.row + " " + styles.footer}>
+            <Row className={styles.social}>
+              <Col>
                 <a href="https://github.com/ikathuria" target="_blank">
                   <FontAwesomeIcon
                     className={styles.icon}
                     icon={["fab", "github"]}
                   />
                 </a>
-              </Nav.Item>
+              </Col>
 
-              <Nav.Item>
+              <Col>
                 <a
                   href="https://www.linkedin.com/in/ishani-kathuria/"
                   target="_blank"
@@ -112,9 +114,9 @@ export default function NavBar() {
                     icon={["fab", "linkedin-in"]}
                   />
                 </a>
-              </Nav.Item>
+              </Col>
 
-              <Nav.Item>
+              <Col>
                 <a
                   href="https://www.instagram.com/ii.meraki.ii/?hl=en"
                   target="_blank"
@@ -124,10 +126,10 @@ export default function NavBar() {
                     icon={["fab", "instagram"]}
                   />
                 </a>
-              </Nav.Item>
-            </div>
+              </Col>
+            </Row>
 
-            <div className={styles.typewriter}>
+            <Row className={styles.typewriter}>
               <Typewriter
                 options={{
                   strings: [
@@ -146,11 +148,12 @@ export default function NavBar() {
                   deleteSpeed: 25,
                 }}
               />
-            </div>
+            </Row>
 
-            <div className={styles.copyright}>
+            <Row className={styles.copyright}>
               <p>©2020 Ishani Kathuria</p>
-            </div>
+            </Row>
+          </Row>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

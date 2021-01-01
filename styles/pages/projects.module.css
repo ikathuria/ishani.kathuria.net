@@ -72,10 +72,22 @@
 
 /* ----------------------- SIZING ----------------------- */
 
+@media (max-width: 1423px) {
+  .cardCol {
+    column-count: 2;
+  }
+}
+
 @media (max-width: 1024px) {
   .header {
     margin-top: 5%;
     font-size: 5rem;
+  }
+}
+
+@media (max-width: 802px) {
+  .cardCol {
+    column-count: 1;
   }
 }
 

@@ -3,39 +3,38 @@
   left: 0;
   width: 15%;
   height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-
   color: #ebebeb;
-
+  text-align: center;
   background-color: #110b11;
+  overflow: hidden;
+}
+
+.navItem {
+  margin-top: 20%;
 }
 
 /* ----------------------- header ----------------------- */
 
-.navItem {
-  font: 600 2.2rem "Lato", sans-serif;
+.menuItem {
+  font: 600 1.7rem "Lato", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   color: #ebebeb !important;
 }
 
-.navItem:hover span {
+.menuItem:hover span {
   position: relative;
   display: inline-block;
   text-decoration: none;
   animation: pop 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
 }
-.navItem span:nth-last-child(1n) {
+.menuItem span:nth-last-child(1n) {
   animation-delay: -0.1666666667s;
 }
-.navItem span:nth-last-child(2n) {
+.menuItem span:nth-last-child(2n) {
   animation-delay: -0.3333333333s;
 }
-.navItem span:nth-last-child(3n) {
+.menuItem span:nth-last-child(3n) {
   animation-delay: -0.5s;
 }
 
@@ -65,40 +64,22 @@
 .active {
   text-decoration: line-through;
 }
-/* ----------------------- footer ----------------------- */
 
-.footer {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-
-.typewriter {
-  max-width: 100%;
-  height: 100px;
-  align-items: center;
-  justify-content: center;
-  word-wrap: break-word;
-  font-size: 1.2rem;
-  overflow: hidden;
-}
-
-/* ------- social ------- */
+/* ------- social icons ------- */
 
 .social {
-  align-items: center;
-  justify-content: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.social a {
-  padding: 25% 0 !important;
+.social li {
+  display: block;
 }
 
 .icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ebebeb;
 }
 
@@ -130,16 +111,27 @@
   }
 }
 
+/* ----------------------- footer ----------------------- */
+
+.typewriter {
+  font-size: 1rem;
+}
+
+.copyright {
+  font-size: 1rem;
+}
+
 /* ----------------------- SIZING ----------------------- */
 
 @media (max-width: 1345px) {
-  .navItem {
-    font-size: 2rem;
+  .menuItem {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .main {
+    position: fixed;
+    top: 0;
   }
 }
 

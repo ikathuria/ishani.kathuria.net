@@ -13,13 +13,13 @@ export default function NavBar() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mx-auto">
-          <div>
+        <Nav className={styles.flexNav + ' flex-column mx-auto'}>
+          <Nav.Item className={styles.navItem}>
             <Nav.Link
               className={
                 router.pathname === "/"
-                  ? styles.active + " " + styles.navItem
-                  : styles.navItem
+                  ? styles.active + " " + styles.menuItem
+                  : styles.menuItem
               }
               href="/"
             >
@@ -32,8 +32,8 @@ export default function NavBar() {
             <Nav.Link
               className={
                 router.pathname === "/about"
-                  ? styles.active + " " + styles.navItem
-                  : styles.navItem
+                  ? styles.active + " " + styles.menuItem
+                  : styles.menuItem
               }
               href="/about"
             >
@@ -47,8 +47,8 @@ export default function NavBar() {
             <Nav.Link
               className={
                 router.pathname === "/projects"
-                  ? styles.active + " " + styles.navItem
-                  : styles.navItem
+                  ? styles.active + " " + styles.menuItem
+                  : styles.menuItem
               }
               href="/projects"
             >
@@ -65,8 +65,8 @@ export default function NavBar() {
             <Nav.Link
               className={
                 router.pathname === "/contact"
-                  ? styles.active + " " + styles.navItem
-                  : styles.navItem
+                  ? styles.active + " " + styles.menuItem
+                  : styles.menuItem
               }
               href="/contact"
             >
@@ -80,9 +80,9 @@ export default function NavBar() {
             </Nav.Link>
 
             <Nav.Link
-              className={styles.navItem}
+              className={styles.menuItem}
               target="_blank"
-              href="/IshaniKathuria-Resume.pdf"
+              href="/IshaniKathuria_Resume.pdf"
             >
               <span>r</span>
               <span>e</span>
@@ -91,8 +91,11 @@ export default function NavBar() {
               <span>m</span>
               <span>e</span>
             </Nav.Link>
-          </div>
-            <div className={styles.social}>
+          </Nav.Item>
+
+          {/* social icons */}
+          <ul className={styles.social + " " + styles.navItem}>
+            <li>
               <Nav.Item>
                 <a href="https://github.com/ikathuria" target="_blank">
                   <FontAwesomeIcon
@@ -101,7 +104,9 @@ export default function NavBar() {
                   />
                 </a>
               </Nav.Item>
+            </li>
 
+            <li>
               <Nav.Item>
                 <a
                   href="https://www.linkedin.com/in/ishani-kathuria/"
@@ -113,7 +118,9 @@ export default function NavBar() {
                   />
                 </a>
               </Nav.Item>
+            </li>
 
+            <li>
               <Nav.Item>
                 <a
                   href="https://www.instagram.com/ii.meraki.ii/?hl=en"
@@ -125,8 +132,10 @@ export default function NavBar() {
                   />
                 </a>
               </Nav.Item>
-            </div>
+            </li>
+          </ul>
 
+          <Nav.Item className={styles.navItem}>
             <div className={styles.typewriter}>
               <Typewriter
                 options={{
@@ -147,10 +156,11 @@ export default function NavBar() {
                 }}
               />
             </div>
+          </Nav.Item>
 
-            <div className={styles.copyright}>
-              <p>©2020 Ishani Kathuria</p>
-            </div>
+          <Nav.Item className={styles.copyright + " " + styles.navItem}>
+            <p>©2020 Ishani Kathuria</p>
+          </Nav.Item>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

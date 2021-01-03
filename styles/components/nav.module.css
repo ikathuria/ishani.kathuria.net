@@ -1,16 +1,5 @@
 .main {
-  position: fixed;
-  left: 0;
-  width: 15%;
-  height: 100vh;
-  color: #ebebeb;
   text-align: center;
-  background-color: #110b11;
-  overflow: hidden;
-}
-
-.navItem {
-  margin-top: 20%;
 }
 
 /* ----------------------- header ----------------------- */
@@ -19,7 +8,7 @@
   font: 600 1.7rem "Lato", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ebebeb !important;
+  color: #110b11 !important;
 }
 
 .menuItem:hover span {
@@ -41,23 +30,23 @@
 @keyframes pop {
   0% {
     transform: translate3d(0, 0, 0);
-    text-shadow: 0em 0em 0 #4062bb;
-    color: #ebebeb;
+    text-shadow: 0em 0em 0 #8aa5e9;
+    color: #110b11;
   }
   30% {
     transform: translate3d(0, 0, 0);
-    text-shadow: 0em 0em 0 #4062bb;
-    color: #ebebeb;
+    text-shadow: 0em 0em 0 #8aa5e9;
+    color: #110b11;
   }
   70% {
     transform: translate3d(0.08em, -0.08em, 0);
-    text-shadow: -0.08em 0.08em #4062bb;
-    color: #ebebeb;
+    text-shadow: -0.08em 0.08em #8aa5e9;
+    color: #110b11;
   }
   100% {
     transform: translate3d(0.08em, -0.08em, 0);
-    text-shadow: -0.08em 0.08em #4062bb;
-    color: #ebebeb;
+    text-shadow: -0.08em 0.08em #8aa5e9;
+    color: #110b11;
   }
 }
 
@@ -65,89 +54,19 @@
   text-decoration: line-through;
 }
 
-/* ------- social icons ------- */
-
-.social {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.social li {
-  display: block;
-}
-
-.icon {
-  font-size: 1.5rem;
-  color: #ebebeb;
-}
-
-.icon:hover {
-  -webkit-animation: icon3d 200ms infinite;
-  animation: icon3d 200ms infinite;
-}
-
-@keyframes icon3d {
-  0% {
-    filter: drop-shadow(5px 4px rgba(244, 67, 54, 1))
-      drop-shadow(-5px -6px rgba(33, 150, 243, 1));
-  }
-  25% {
-    filter: drop-shadow(-5px -6px rgba(244, 67, 54, 1))
-      drop-shadow(5px 4px rgba(33, 150, 243, 1));
-  }
-  50% {
-    filter: drop-shadow(5px -4px rgba(244, 67, 54, 1))
-      drop-shadow(-8px 4px rgba(33, 150, 243, 1));
-  }
-  75% {
-    filter: drop-shadow(-8px -4px rgba(244, 67, 54, 1))
-      drop-shadow(-5px -4px rgba(33, 150, 243, 1));
-  }
-  100% {
-    filter: drop-shadow(-5px 0 rgba(244, 67, 54, 1))
-      drop-shadow(5px -4px rgba(33, 150, 243, 1));
-  }
-}
-
-/* ----------------------- footer ----------------------- */
-
-.typewriter {
-  font-size: 1rem;
-}
-
-.copyright {
-  font-size: 1rem;
-}
-
 /* ----------------------- SIZING ----------------------- */
 
 @media (max-width: 1345px) {
-  .menuItem {
-  }
 }
 
 @media (max-width: 992px) {
-  .main {
-    position: fixed;
-    top: 0;
-  }
 }
 
 @media (max-width: 767px) {
-  .main {
-  }
 }
 
 @media (max-width: 480px) {
-  .main {
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 280px) {
-  .main {
-    margin-left: 0;
-  }
 }

@@ -18,7 +18,7 @@ export default function Contact() {
             <Container className={styles.aboutContainer}>
               <Row className={styles.aboutRow}>
                 <Col lg={6} className={styles.image}>
-                  <Image src="/pages/ishani-kathuria.jpg" roundedCircle fluid />
+                  <Image src="/pages/ishani-kathuria.png" roundedCircle fluid />
                 </Col>
 
                 <Col lg={6} className={styles.description}>

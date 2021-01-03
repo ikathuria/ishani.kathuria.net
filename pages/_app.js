@@ -7,6 +7,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Nav from "../components/nav";
+import Footer from "../components/footer"
 
 library.add(fab, fas);
 
@@ -42,7 +43,8 @@ export default function MyApp({ Component, pageProps }) {
       <Nav />
 
       <Component {...pageProps} />
-      
+
+      <Footer />
     </>
   );
 }

@@ -20,35 +20,30 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
 
         {/* Open graph meta tags */}
+        <meta property="og:url" content="https://ishani.kathuria.net/"></meta>
+        <meta name="og:title" content="Ishani Kathuria"></meta>
         <meta
-          property="og:url"
-          content="https://ishani.kathuria.net/"
-          key="ogurl"
+          name="og:description"
+          content="A simple girl from India with a passion for technology. I absolutely love programming, data science, and web development. In my free time, I draw, write, and take pictures of beautiful things."
         ></meta>
         <meta
           property="og:image"
           content="https://ishani.kathuria.net/pages/ishani-kathuria.png"
           key="ogimage"
         ></meta>
-        <meta name="og:title" content="Ishani Kathuria" key="ogtitle" />
-        <meta
-          name="og:description"
-          content="A simple girl from India with a passion for technology. I absolutely love programming, data science, and web development. In my free time, I draw, write, and take pictures of beautiful things."
-          key="ogdesc"
-        />
 
         {/* Twitter meta tags */}
-        <meta
-          name="twitter:card"
-          content="A simple girl from India with a passion for technology. I absolutely love programming, data science, and web development. In my free time, I draw, write, and take pictures of beautiful things."
-          key="twcard"
-        />
-        <meta name="twitter:creator" content="IshaniKathuria" key="twhandle" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@IshaniKathuria" />
         <meta name="twitter:title" content="Ishani Kathuria" />
         <meta
-          property="twitter:image"
+          name="twitter:description"
+          content="A simple girl from India with a passion for technology. I absolutely love programming, data science, and web development. In my free time, I draw, write, and take pictures of beautiful things."
+        />
+        <meta
+          name="twitter:image"
           content="https://ishani.kathuria.net/pages/ishani-kathuria.png"
-        ></meta>
+        />
 
         {/* google fonts - Archivo Black, Baloo 2, Confortaa, Poppins */}
         <link rel="preconnect" href="https://fonts.gstatic.com" />

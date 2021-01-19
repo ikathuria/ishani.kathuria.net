@@ -9,8 +9,11 @@ export default function NavBar() {
   const router = useRouter();
 
   return (
-      <Navbar className={styles.main} collapseOnSelect fixed="top">
-        <Nav className={styles.flexNav}>
+    <Navbar className={styles.main} expand="lg" fixed="top">
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className={styles.nav}>
           <Nav.Link
             className={
               router.pathname === "/"
@@ -87,18 +90,8 @@ export default function NavBar() {
             <span>m</span>
             <span>e</span>
           </Nav.Link>
-          <Button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#external-content"
-            aria-controls="external-content"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </Button>
         </Nav>
-      </Navbar>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }

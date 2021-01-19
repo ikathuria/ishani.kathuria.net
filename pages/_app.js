@@ -7,7 +7,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import Nav from "../components/nav";
-import Footer from "../components/footer"
+import Footer from "../components/footer";
 
 library.add(fab, fas);
 
@@ -20,11 +20,27 @@ export default function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
 
         {/* Primary Meta Tags */}
-        <meta name="title" content="Ishani Kathuria" />
+        <meta name="og:title" content="Ishani Kathuria" />
         <meta
-          name="description"
-          content="Just a simple girl from India with a passion for technology. I absolutely love web development, programming, and data science. In my free time, I draw, write, and take pictures of beautiful things."
+          name="og:description"
+          content="A simple girl from India with a passion for technology. I absolutely love programming, data science, and web development. In my free time, I draw, write, and take pictures of beautiful things."
         />
+        <meta
+          property="og:image"
+          content="../public//pages/ishani-kathuria.png"
+        ></meta>
+        <meta property="og:url" content="https://ishani.kathuria.net/"></meta>
+
+        {/* Twitter meta tags */}
+        <meta name="twitter:title" content="Ishani Kathuria" />
+        <meta
+          name="twitter:description"
+          content="A simple girl from India with a passion for technology. I absolutely love programming, data science, and web development. In my free time, I draw, write, and take pictures of beautiful things."
+        />
+        <meta
+          property="twitter:image"
+          content="../public//pages/ishani-kathuria.png"
+        ></meta>
 
         {/* google fonts - Archivo Black, Baloo 2, Confortaa, Poppins */}
         <link rel="preconnect" href="https://fonts.gstatic.com" />

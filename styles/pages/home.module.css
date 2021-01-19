@@ -348,17 +348,29 @@
 /* ----------------------- SIZING ----------------------- */
 
 @media (max-width: 1024px) {
-  .heading {
-    font-size: 6rem;
-  }
   .main h2 {
     font-size: 5rem;
     text-align: center;
   }
 }
 
+@media (max-width: 991px) {
+  .artImg {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
-  .heading {
+  .header h1 {
+    font-size: 4.8rem;
+  }
+  .main h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 528px) {
+  .header h1 {
     font-size: 4rem;
   }
   .main h2 {
@@ -367,29 +379,30 @@
 }
 
 @media (max-width: 480px) {
-  .heading {
-    font-size: 2.75rem;
+  .header h1 {
+    font-size: 3.7rem;
   }
-  .main h2 {
+}
+
+@media (max-width: 420px) {
+  .header h1 {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .header h1 {
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 280px) {
   .header h1 {
     display: block;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 0;
   }
   .main h2 {
     font-size: 3rem;
-  }
-  .artRow {
-    display: block;
-    height: 200vh;
-  }
-  .inner {
-    width: 100%;
-    height: 50%;
   }
 }

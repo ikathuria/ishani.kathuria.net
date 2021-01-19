@@ -26,7 +26,7 @@ export default function Home() {
         <Jumbotron fluid className={styles.jumbotron}>
           <Container className={styles.header}>
             <h1>
-              <b>Ishani</b> Kathuria.
+              <b>Ishani</b> Kathuria
             </h1>
           </Container>
 
@@ -150,7 +150,22 @@ export default function Home() {
         <section className={styles.mainRow + " " + styles.art} id="art">
           <Container fluid className={styles.artContainer}>
             <Row className={styles.artRow}>
-              <Col lg={6} className={styles.artCol + " " + styles.artImg}>
+              <Col lg={6} className={styles.artCol + " " + styles.artImg}></Col>
+
+              <Col
+                lg={6}
+                className={styles.artCol + " " + styles.artDescription}
+              >
+                <div style={{ margin: "0 5%" }}>
+                  <h2>My creative ambitions</h2>
+
+                  <p>
+                    This is another one of my newest projects made with next.js.
+                    It is a showcase of my writings, pictures I've taken of
+                    beautiful things and drawings I've created.
+                  </p>
+                </div>
+
                 <Link href="/projects">
                   <a className={styles.artLink}>
                     <svg
@@ -178,21 +193,7 @@ export default function Home() {
                     </svg>
                   </a>
                 </Link>
-              </Col>
-
-              <Col
-                lg={6}
-                className={styles.artCol + " " + styles.artDescription}
-              >
-                <div style={{ margin: "0 5%" }}>
-                  <h2>My creative ambitions</h2>
-
-                  <p>
-                    This is another one of my newest projects made with next.js.
-                    It is a showcase of my writings, pictures I've taken of
-                    beautiful things and drawings I've created.
-                  </p>
-                </div>
+                
               </Col>
             </Row>
           </Container>

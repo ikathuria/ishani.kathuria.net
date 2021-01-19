@@ -2,7 +2,10 @@
   text-align: center;
 }
 
-/* ----------------------- header ----------------------- */
+.navToggle {
+  background-color: #110b11;
+  border-color: #ebebeb !important;
+}
 
 .menuItem {
   font: 600 1.7rem "Lato", sans-serif;

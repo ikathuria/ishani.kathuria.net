@@ -1,8 +1,5 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
-import Typewriter from "typewriter-effect";
 import { Navbar, Nav, Button, Container, Row, Col } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/components/nav.module.css";
 
 export default function NavBar() {
@@ -10,7 +7,7 @@ export default function NavBar() {
 
   return (
     <Navbar className={styles.main} expand="lg" fixed="top" variant="dark">
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle className={styles.navToggle} aria-controls="basic-navbar-nav" />
 
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={styles.nav}>

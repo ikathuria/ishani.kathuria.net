@@ -9,9 +9,7 @@
 }
 
 .image {
-  display: block;
   margin: auto;
-  width: 50%;
 }
 
 .description {
@@ -292,26 +290,25 @@
 /* ----------------------- SIZING ----------------------- */
 
 @media (max-width: 1024px) {
-  .me {
-    background-position: center;
+}
+
+@media (max-width: 991px) {
+  .image {
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
-  .me {
-    background-position: center;
-  }
 }
 
-@media (max-width: 480px) {
-  .me {
-    background-position: center center;
-    background-size: cover;
+@media (max-width: 375px) {
+  .description h1 {
+    font-size: 4rem;
   }
 }
 
 @media (max-width: 280px) {
-  .me {
-    background-position: center;
+  .description h1 {
+    font-size: 3.6rem;
   }
 }

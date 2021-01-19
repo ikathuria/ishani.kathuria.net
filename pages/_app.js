@@ -27,7 +27,7 @@ export default function MyApp({ Component, pageProps }) {
         />
         <meta
           property="og:image"
-          content="../public//pages/ishani-kathuria.png"
+          content="/pages/ishani-kathuria.png"
         ></meta>
         <meta property="og:url" content="https://ishani.kathuria.net/"></meta>
 

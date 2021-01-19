@@ -9,9 +9,9 @@ export default function NavBar() {
   const router = useRouter();
 
   return (
-    <Navbar className={styles.main} expand="lg" fixed="top">
+    <Navbar className={styles.main} expand="lg" fixed="top" variant="dark">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      
+
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={styles.nav}>
           <Nav.Link

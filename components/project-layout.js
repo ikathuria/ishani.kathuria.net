@@ -2,7 +2,6 @@ import Head from "next/head";
 import {
   Container,
   Row,
-  Col,
   Badge,
   ButtonGroup,
   Button,
@@ -19,7 +18,7 @@ export default function Layout({ meta, children, project }) {
       <div
         className={styles.heading}
         style={{
-          backgroundImage: `linear-gradient(rgba(10, 10, 10, .6), rgba(0, 0, 0, .9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url('${meta.img}')`,
+          backgroundImage: `linear-gradient(rgba(10, 10, 10, .6), rgba(0, 0, 0, .9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url('${meta.img}')`
         }}
       >
         <h1 className={styles.glitch} data-text={meta.title}>

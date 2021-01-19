@@ -45,7 +45,7 @@ export default function MyApp({ Component, pageProps }) {
           content="https://ishani.kathuria.net/pages/ishani-kathuria.png"
         />
 
-        {/* google fonts - Archivo Black, Baloo 2, Confortaa, Poppins */}
+        {/* google fonts - Archivo Black, Baloo 2, Confortaa, Poppins, Roboto Slab, Raleway */}
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Baloo+2&family=Comfortaa:wght@300&family=Poppins:wght@200&family=Roboto+Slab&family=Raleway:wght@900&display=swap"

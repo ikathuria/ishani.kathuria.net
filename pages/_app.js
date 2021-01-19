@@ -19,27 +19,35 @@ export default function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
 
-        {/* Primary Meta Tags */}
-        <meta name="og:title" content="Ishani Kathuria" />
+        {/* Open graph meta tags */}
+        <meta
+          property="og:url"
+          content="https://ishani.kathuria.net/"
+          key="ogurl"
+        ></meta>
+        <meta
+          property="og:image"
+          content="https://ishani.kathuria.net/pages/ishani-kathuria.png"
+          key="ogimage"
+        ></meta>
+        <meta name="og:title" content="Ishani Kathuria" key="ogtitle" />
         <meta
           name="og:description"
           content="A simple girl from India with a passion for technology. I absolutely love programming, data science, and web development. In my free time, I draw, write, and take pictures of beautiful things."
+          key="ogdesc"
         />
-        <meta
-          property="og:image"
-          content="/pages/ishani-kathuria.png"
-        ></meta>
-        <meta property="og:url" content="https://ishani.kathuria.net/"></meta>
 
         {/* Twitter meta tags */}
+        <meta
+          name="twitter:card"
+          content="A simple girl from India with a passion for technology. I absolutely love programming, data science, and web development. In my free time, I draw, write, and take pictures of beautiful things."
+          key="twcard"
+        />
+        <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
         <meta name="twitter:title" content="Ishani Kathuria" />
         <meta
-          name="twitter:description"
-          content="A simple girl from India with a passion for technology. I absolutely love programming, data science, and web development. In my free time, I draw, write, and take pictures of beautiful things."
-        />
-        <meta
           property="twitter:image"
-          content="/pages/ishani-kathuria.png"
+          content="https://ishani.kathuria.net/pages/ishani-kathuria.png"
         ></meta>
 
         {/* google fonts - Archivo Black, Baloo 2, Confortaa, Poppins */}

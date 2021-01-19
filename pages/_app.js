@@ -39,7 +39,7 @@ export default function MyApp({ Component, pageProps }) {
         />
         <meta
           property="twitter:image"
-          content="../public//pages/ishani-kathuria.png"
+          content="/pages/ishani-kathuria.png"
         ></meta>
 
         {/* google fonts - Archivo Black, Baloo 2, Confortaa, Poppins */}

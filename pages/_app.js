@@ -43,7 +43,7 @@ export default function MyApp({ Component, pageProps }) {
           content="A simple girl from India with a passion for technology. I absolutely love programming, data science, and web development. In my free time, I draw, write, and take pictures of beautiful things."
           key="twcard"
         />
-        <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
+        <meta name="twitter:creator" content="IshaniKathuria" key="twhandle" />
         <meta name="twitter:title" content="Ishani Kathuria" />
         <meta
           property="twitter:image"

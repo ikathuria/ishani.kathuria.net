@@ -97,7 +97,13 @@ export default function Home() {
               I am Ishani Kathuria, owner of this tiny little part of the
               internet I call home. I’m a typical introvert who loves
               programming, art and books. Scroll down to see my latest projects
-              or go over to the about sectipn to read more about me :)
+              or go over to the{" "}
+              <Link href="/about" passHref>
+                <a className={styles.aboutPage}>
+                  about
+                </a>
+              </Link>{" "}
+              section to know more about me :)
             </p>
           </Container>
         </section>
@@ -193,7 +199,6 @@ export default function Home() {
                     </svg>
                   </a>
                 </Link>
-                
               </Col>
             </Row>
           </Container>

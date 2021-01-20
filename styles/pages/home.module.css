@@ -116,7 +116,7 @@
 
   width: 100%;
 
-  color: rgb(60, 60, 60);
+  color: #3c3c3c;
 }
 
 .mainRow h2 {
@@ -138,6 +138,18 @@
 .description p {
   font-size: 1.7rem;
   text-align: center;
+}
+
+.aboutPage {
+  color: #3c3c3c;
+  text-decoration: underline;
+}
+
+.aboutPage:hover {
+  color: #3c3c3c;
+  background-color: #ebebeb;
+  text-decoration: none;
+  transition: all cubic-bezier() 0.5s;
 }
 
 /* ---------------------------------------------- Projects ---------------------------------------------- */

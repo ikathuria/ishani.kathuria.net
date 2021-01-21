@@ -359,13 +359,6 @@
 
 /* ----------------------- SIZING ----------------------- */
 
-@media (max-width: 1024px) {
-  .main h2 {
-    font-size: 5rem;
-    text-align: center;
-  }
-}
-
 @media (max-width: 991px) {
   .artImg {
     display: none;
@@ -376,17 +369,15 @@
   .header h1 {
     font-size: 4.8rem;
   }
-  .main h2 {
-    font-size: 4rem;
-  }
 }
 
 @media (max-width: 528px) {
   .header h1 {
     font-size: 4rem;
   }
-  .main h2 {
+  .mainRow h2 {
     font-size: 4rem;
+    letter-spacing: 0;
   }
 }
 
@@ -394,17 +385,23 @@
   .header h1 {
     font-size: 3.7rem;
   }
+  .mainRow h2 {
+    font-size: 3.5rem;
+  }
 }
 
 @media (max-width: 420px) {
   .header h1 {
     font-size: 3rem;
   }
+  .mainRow h2 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 370px) {
   .header h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -414,7 +411,7 @@
     font-size: 2rem;
     letter-spacing: 0;
   }
-  .main h2 {
+  .mainRow h2 {
     font-size: 3rem;
   }
 }

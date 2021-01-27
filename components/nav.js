@@ -78,7 +78,7 @@ export default function NavBar() {
           <Nav.Link
             className={styles.menuItem}
             target="_blank"
-            href="/IshaniKathuria_Resume.pdf"
+            href="/Ishani-Kathuria-Resume.pdf"
           >
             <span>r</span>
             <span>e</span>

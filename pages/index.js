@@ -99,9 +99,7 @@ export default function Home() {
               programming, art and books. Scroll down to see my latest projects
               or go over to the{" "}
               <Link href="/about" passHref>
-                <a className={styles.aboutPage}>
-                  about
-                </a>
+                <a className={styles.aboutPage}>about</a>
               </Link>{" "}
               section to know more about me :)
             </p>
@@ -172,33 +170,34 @@ export default function Home() {
                   </p>
                 </div>
 
-                <Link href="/projects">
-                  <a className={styles.artLink}>
-                    <svg
-                      height="325"
-                      viewBox="45 60 400 320"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
+                <a
+                  className={styles.artLink}
+                  href="http://icreate.kathuria.net/"
+                >
+                  <svg
+                    height="325"
+                    viewBox="45 60 400 320"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="#fff"
+                      d="M 90 210 C 90 180 90 150 150 150 C 150 150 180 150 180 150 C 180 150 300 150 300 150 C 300 150 330 150 330 150 C 390 150 390 180 390 210 C 390 240 390 270 330 270 C 330 270 300 270 300 270 C 300 270 180 270 180 270 C 180 270 150 270 150 270 C 90 270 90 240 90 210"
+                      mask="url(#knockout-text)"
+                    ></path>
+                    <mask id="knockout-text">
+                      <rect
+                        width="100%"
+                        height="100%"
                         fill="#fff"
-                        d="M 90 210 C 90 180 90 150 150 150 C 150 150 180 150 180 150 C 180 150 300 150 300 150 C 300 150 330 150 330 150 C 390 150 390 180 390 210 C 390 240 390 270 330 270 C 330 270 300 270 300 270 C 300 270 180 270 180 270 C 180 270 150 270 150 270 C 90 270 90 240 90 210"
-                        mask="url(#knockout-text)"
-                      ></path>
-                      <mask id="knockout-text">
-                        <rect
-                          width="100%"
-                          height="100%"
-                          fill="#fff"
-                          x="0"
-                          y="0"
-                        />
-                      </mask>
-                      <text x="110" y="227" fill="#000">
-                        check it out {"->"}
-                      </text>
-                    </svg>
-                  </a>
-                </Link>
+                        x="0"
+                        y="0"
+                      />
+                    </mask>
+                    <text x="110" y="227" fill="#000">
+                      check it out {"->"}
+                    </text>
+                  </svg>
+                </a>
               </Col>
             </Row>
           </Container>

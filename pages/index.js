@@ -164,7 +164,7 @@ export default function Home() {
                   <h2>My creative ambitions</h2>
 
                   <p>
-                    This is another one of my newest projects made with next.js.
+                    This is another one of my newest projects made with wordpress.
                     It is a showcase of my writings, pictures I've taken of
                     beautiful things and drawings I've created.
                   </p>
